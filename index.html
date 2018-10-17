@@ -72,28 +72,19 @@
 								</div>
 
 							<!-- Form -->
-							<form action="http://www.cityline.ru/cgi-bin/formmail.ru">
-          <input type="hidden" name="recipient" value="apollinarialinaria@gmail.com">
-          <input type="hidden" name="subject" value="булошная">
-					<div class="column">
-									<h3>Можете пожелать мне хорошего дня</h3>
-									<form action="#" method="post">
-										<div class="field half first">
-											<label for="name">Имя</label>
-											<input name="имя" id="имя" type="text" placeholder="Имя">
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input name="email" id="email" type="email" placeholder="Email">
-										</div>
-										<div class="field">
-											<label for="message">Ваши приятные слова</label>
-											<textarea name="message" id="message" rows="6" placeholder="мур"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input value="Отправить" class="button" type="submit"></li>
-										</ul>
-									</form>
+							<form method="post" action="mail.php">
+<strong>Ваше имя:</strong><br />
+<input type="text" name="name" size="30"/>
+<br />
+<strong>Ваш e-mail (для ответа):</strong><br />
+<input name="email" type="text" size="30" />
+<br />
+<strong>Ваше сообщение:</strong><br />
+<textarea name="mess" rows="3" cols="25"></textarea>
+<p>
+<input type="submit" value="Отправить сообщение"/>
+</p>
+</form>
 								</div>
 
 						</section>
